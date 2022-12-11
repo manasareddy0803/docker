@@ -1,0 +1,11 @@
+FROM ubuntu
+
+MAINTAINER manasa <manasareddy0803@gmail.com>
+
+RUN apt-get update
+
+RUN mkdir -p /home/app
+
+COPY . /home/app
+
+CMD ["Hello All","Welcome to ubuntu"]
