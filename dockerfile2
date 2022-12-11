@@ -1,0 +1,11 @@
+FROM node:14-alpine
+
+MAINTAINER manasa <manasareddy0803@gmail.com>
+
+ENV MONGO_DB_USERNAME=admin  MONGO_DB_PWD=password
+
+RUN mkdir -p /home/app
+
+COPY . /home/app
+
+CMD ["node","/home/app/server.js"]
